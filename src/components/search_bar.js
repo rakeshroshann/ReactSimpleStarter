@@ -8,7 +8,15 @@ export default class SearchBar extends Component{
 			term:''
 		};
 	}
+	onInputChange(term){
+		this.setState({term: term});
+		this.props.onSearchTermChange(term);
+	}
 	render(){
-		return <input onChange={(event) => this.setState({term: event.target.value})} value={this.state.term}/>;
+		return (
+			<div className='search-bar'>
+				<input onChange={(event) => this.onInputChange(event.target.value)} value={this.state.term}/>
+			</div>
+		);
 	}
 }
