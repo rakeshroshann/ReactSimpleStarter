@@ -8,7 +8,7 @@ export default class VideoListItem extends Component{
 	render(){
 		const imageUrl = this.props.video.snippet.thumbnails.default.url;
 		return (
-			<li className='list-group-item'>
+			<li className='list-group-item'}>
 				<div className='video-list media'>
 					<div className='media-left'>
 						<img className='media-object' src={imageUrl}/>
