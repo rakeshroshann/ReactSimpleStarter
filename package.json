@@ -24,10 +24,10 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
-    "lodash": "^3.10.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "redux": "^3.5.2",
+    "lodash": "^4.13.1",
     "youtube-api-search": "0.0.5"
   }
 }
